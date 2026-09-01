@@ -6,14 +6,11 @@
     <title>Giới thiệu về tôi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* ===== RESET & BASE ===== */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-        /* Biến màu sắc - mặc định theme sáng */
         :root {
             --bg-body: linear-gradient(145deg, #f8faff 0%, #e9eff7 100%);
             --bg-card: rgba(255, 255, 255, 0.7);
@@ -44,8 +41,6 @@
             --heart-color: #e74c6f;
             --blockquote-color: #1a2844;
         }
-
-        /* Theme tối - khi thêm class "dark-mode" vào body */
         body.dark-mode {
             --bg-body: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
             --bg-card: rgba(30, 30, 60, 0.85);
@@ -107,8 +102,6 @@
                 border-radius: 32px;
             }
         }
-
-        /* ===== NÚT CHUYỂN ĐỔI THEME ===== */
         .theme-toggle {
             position: fixed;
             top: 20px;
@@ -139,8 +132,6 @@
             font-size: 1.2rem;
             color: var(--icon-color);
         }
-
-        /* ===== HEADER ===== */
         .profile-header {
             display: flex;
             align-items: center;
@@ -225,8 +216,6 @@
                 font-size: 2.2rem;
             }
         }
-
-        /* ===== GRID GIỚI THIỆU ===== */
         .intro-grid {
             display: grid;
             grid-template-columns: 1fr 1.2fr;
@@ -325,8 +314,6 @@
             border-color: var(--icon-color);
             transform: scale(1.02);
         }
-
-        /* ===== SỞ THÍCH + TRÍCH DẪN ===== */
         .quote-hobby {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -402,8 +389,6 @@
             color: var(--icon-color);
             margin-right: 4px;
         }
-
-        /* ===== SOCIAL LINKS ===== */
         .social-links {
             display: flex;
             align-items: center;
@@ -436,8 +421,6 @@
             border-color: var(--icon-color);
             box-shadow: 0 12px 24px rgba(74, 124, 247, 0.25);
         }
-
-        /* ===== FOOTER ===== */
         .footer-note {
             text-align: center;
             margin-top: 2.5rem;
@@ -453,8 +436,6 @@
             color: var(--heart-color);
             margin: 0 4px;
         }
-
-        /* ===== RESPONSIVE ===== */
         @media (max-width: 768px) {
             .theme-toggle {
                 top: 10px;
@@ -469,18 +450,13 @@
     </style>
 </head>
 <body>
-
-    <!-- ===== NÚT CHUYỂN ĐỔI THEME ===== -->
     <button class="theme-toggle" id="themeToggle" aria-label="Chuyển đổi giao diện">
         <i class="fas fa-moon" id="themeIcon"></i>
         <span id="themeLabel">Tối</span>
     </button>
-
     <div class="card">
-        <!-- ===== HEADER ===== -->
         <div class="profile-header">
             <div class="avatar-wrapper">
-                <!-- 🔥 THAY ĐƯỜNG DẪN ẢNH CỦA BẠN TẠI ĐÂY -->
                 <img src="https://scontent.fcxr1-1.fna.fbcdn.net/v/t39.30808-6/734808130_122208508682336813_8755987331784634895_n.jpg?stp=dst-jpg_tt6&cstp=mx1024x1024&ctp=s1024x1024&_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHg3yAaFaaXODreAaFFa3w0oSLJKH5lDHShIskofmUMdBghb8VPGFJLQNl8V97droWaR6p4AYjmv7LXYFqbVDvr&_nc_ohc=Fm9l73hnnDkQ7kNvwFQEauz&_nc_oc=Adr1hHDteALyKe4ceVfI-XB2y0RiMgTJziWTygk1z1JsMHzJOLgsW82zH9jlEy71UkM&_nc_zt=23&_nc_ht=scontent.fcxr1-1.fna&_nc_gid=_Gkp1brmfWvEV3TgPGA8Hw&_nc_ss=7b2a8&oh=00_AQJT8fBYSCdg1937Uq1uyeaugsCSkLbxqqGnXrTRyrCoTQ&oe=6A9C7B9E" alt="Ảnh đại diện">
             </div>
             <div class="name-title">
@@ -497,7 +473,7 @@
                 <p>Xin chào! Tôi là một lập trình viên đam mê công nghệ, thích xây dựng những sản phẩm hữu ích và sáng tạo. 
                 Tôi mới học được 2 năm .</p>
                 <p style="margin-top: 1rem;"><i class="fas fa-quote-left" style="color: var(--icon-color); opacity: 0.6; margin-right: 4px;"></i> 
-                "Biến ý tưởng thành hiện thực qua từng dòng code."</p>
+                "muốn code bạn phải biết bạn muốn làm gì."</p>
             </div>
 
             <div class="bio-box">
@@ -520,8 +496,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- ===== SỞ THÍCH + TRÍCH DẪN ===== -->
         <div class="quote-hobby">
             <div class="hobby-box">
                 <h4><i class="fas fa-heart" style="color: var(--heart-color);"></i> Sở thích</h4>
@@ -532,14 +506,12 @@
                 </div>
             </div>
             <div class="quote-box">
-                <h4><i class="fas fa-quote-right"></i> Câu nói tâm đắc</h4>
+                <h4><i class="fas fa-quote-right"></i> Câu nói xàm mà tui nói:></h4>
                 <blockquote>
-                    Đừng chỉ viết code để chạy, hãy viết code để người khác hiểu và cảm nhận.
+                    Đừng quên đi ỉa mà không chùi đít và mang giấy theo.
                 </blockquote>
             </div>
         </div>
-
-        <!-- ===== SOCIAL LINKS ===== -->
         <div class="social-links">
             <a href="https://www.facebook.com/tran.phong.204376" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
              </a>
@@ -547,23 +519,15 @@
              </a>
             <a href="https://www.tiktok.com/@kenken8297" target="_blank" aria-label="YouTube"><i class="fab fa-tiktok"></i>
         </div>
-
-        <!-- ===== FOOTER ===== -->
         <div class="footer-note">
             <i class="fas fa-code"></i> với <i class="fas fa-heart"></i> · Cảm ơn bạn đã ghé thăm!
         </div>
     </div>
-
-    <!-- ===== JAVASCRIPT CHUYỂN ĐỔI THEME ===== -->
     <script>
         const toggleBtn = document.getElementById('themeToggle');
         const themeIcon = document.getElementById('themeIcon');
         const themeLabel = document.getElementById('themeLabel');
-
-        // Kiểm tra theme đã lưu trong localStorage
         let isDark = localStorage.getItem('theme') === 'dark';
-
-        // Hàm áp dụng theme
         function applyTheme(dark) {
             if (dark) {
                 document.body.classList.add('dark-mode');
@@ -576,16 +540,11 @@
             }
             localStorage.setItem('theme', dark ? 'dark' : 'light');
         }
-
-        // Áp dụng theme khi tải trang
         applyTheme(isDark);
-
-        // Sự kiện click nút
         toggleBtn.addEventListener('click', () => {
             isDark = !isDark;
             applyTheme(isDark);
         });
     </script>
-
 </body>
 </html>
